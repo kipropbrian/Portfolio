@@ -6,7 +6,7 @@ import H3 from "@/components/ui/h3";
 import P from "@/components/ui/p";
 import github from "@/lib/assets/github.png";
 import voltus from "@/lib/assets/facevector.webp";
-import profilePhoto from "@/lib/assets/profile-photo.jpg";
+import profilePhoto from "@/lib/assets/profile-photo.jpeg";
 import x from "@/lib/assets/x.png";
 import {
   Mail,
