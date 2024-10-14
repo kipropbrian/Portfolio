@@ -104,7 +104,7 @@ export default function Home() {
         <H2>About</H2>
 
         <P>
-          I'm Brian Maiyo, an accomplished Engineering Manager with over 10
+          I am Brian Maiyo, an accomplished Engineering Manager with over 10
           years of experience leading software development teams and
           spearheading successful technology projects. My expertise lies in
           engineering management, where I focus on optimizing processes, driving
@@ -215,16 +215,16 @@ export default function Home() {
         <div className="space-y-2">
           <P>
             As an Engineering Manager at Andela since 2021, I manage and lead a
-            team of seven engineers. I focus on cultivating a positive work
+            team of engineers. I focus on cultivating a positive work
             environment and strive to achieve a high employee satisfaction rate
-            by promoting continuous learning and supporting my team's
-            professional growth. In addition to my leadership responsibilities,
-            I develop and maintain detailed technical roadmaps for Andela's
-            clients, ensuring their projects align with our engineering
-            capabilities and strategic goals. This involves understanding client
-            needs, defining technical solutions, and outlining a clear path for
-            project execution. This approach has led to improvements in project
-            delivery timelines and increased client satisfaction.
+            by promoting continuous learning and supporting my teams
+            technical and professional growth. In addition to my leadership responsibilities,
+            I develop and maintain detailed technical roadmaps for clients,
+            ensuring their projects align with our engineering capabilities and
+            strategic goals. This involves understanding client needs, defining
+            technical solutions, and outlining a clear path for project
+            execution. This approach has led to improvements in project delivery
+            timelines and increased client satisfaction.
           </P>
 
           <div className="flex flex-wrap gap-1">
