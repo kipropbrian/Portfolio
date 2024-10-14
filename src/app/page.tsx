@@ -7,15 +7,9 @@ import P from "@/components/ui/p";
 import github from "@/lib/assets/github.png";
 import voltus from "@/lib/assets/facevector.webp";
 import profilePhoto from "@/lib/assets/profile-photo.jpeg";
-import x from "@/lib/assets/x.png";
-import {
-  Mail,
-  MapPin,
-  Phone,
-  Linkedin,
-  Paperclip,
-  PaperclipIcon,
-} from "lucide-react";
+import neovim from "@/lib/assets/nvim.png";
+
+import { Mail, MapPin, Phone, Linkedin, PaperclipIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -113,15 +107,54 @@ export default function Home() {
           I'm Brian Maiyo, an accomplished Engineering Manager with over 10
           years of experience leading software development teams and
           spearheading successful technology projects. My expertise lies in
-          full-stack development, DevOps, and project management, and I have a
-          proven track record of boosting operational efficiency. I thrive on
-          mentoring and developing talent, cultivating collaborative team
-          environments, and aligning technical strategies with core business
-          objectives.
+          engineering management, where I focus on optimizing processes, driving
+          technical excellence, and ensuring teams deliver high-quality
+          solutions on time. I have a proven track record of boosting
+          operational efficiency. I thrive on mentoring and developing talent,
+          cultivating collaborative team environments, and aligning technical
+          strategies with core business objectives.
         </P>
       </section>
 
       <section className="space-y-10">
+        <H2>Current Interests</H2>
+        <div className="space-y-2">
+          <div className="flex gap-4">
+            <Link
+              href="https://neovim.io/"
+              target="_blank"
+              className="shrink-0"
+            >
+              <Image
+                src={neovim}
+                alt="Neovim icom"
+                width={80}
+                height={80}
+                className="rounded object-cover"
+              />
+            </Link>
+            <div>
+              <Link href="https://voltus.brianmaiyo.dev" target="_blank">
+                <H3>Neovim</H3>
+              </Link>
+              <P>
+                Neovim is a modern version of Vim, designed to be faster, more
+                user-friendly, and easier to extend. It keeps all the powerful
+                editing features of Vim but adds things like async plugin
+                support, an embedded terminal, and a built-in Lua API for
+                customization. I am currently trying to be a Vim guru, so that I
+                fly all over the keyboard. Here is my{" "}
+                <a
+                  className="text-blue-600"
+                  href="https://github.com/kipropbrian/kickstart.nvim"
+                >
+                  config.
+                </a>
+              </P>
+            </div>
+          </div>
+        </div>
+
         <H2>Side Projects</H2>
 
         <div className="space-y-2">
@@ -145,13 +178,25 @@ export default function Home() {
               </Link>
               <P>
                 Voltus is a website that searches through images and identifies
-                public officials. This is useful to journalists, OSINT
+                Kenyan public officials. This is useful to journalists, OSINT
                 community, and any curious person who has an image and is trying
-                to figure out who the person in the image is.
+                to figure out who the person in the image is. It currently only
+                works for a few Kenyan politicians, but I have plans of
+                expanding the list of people who you can search for to include
+                all Kenyan politicians and other public figures in Kenya. I am
+                using{" "}
+                <a
+                  className="text-blue-600"
+                  href="https://www.faceplusplus.com/"
+                >
+                  Face++
+                </a>{" "}
+                on the backend but I have future plans of using another Visual
+                recognition model.
               </P>
             </div>
           </div>
-          <div className="flex flex-wrap gap-1">
+          <div className="flex flex-wrap gap-2">
             <Badge variant="secondary">Vue.js</Badge>
             <Badge variant="secondary">JavaScript</Badge>
             <Badge variant="secondary">Tailwind CSS</Badge>
@@ -189,7 +234,6 @@ export default function Home() {
             <Badge variant="secondary">Python</Badge>
             <Badge variant="secondary">React</Badge>
             <Badge variant="secondary">MongoDB</Badge>
-            <Badge variant="secondary">C</Badge>
             <Badge variant="outline">VueJS</Badge>
             <Badge variant="secondary">Data Analytics</Badge>
             <Badge variant="secondary">Tailwind CSS</Badge>
