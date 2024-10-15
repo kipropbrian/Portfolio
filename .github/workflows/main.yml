@@ -32,12 +32,12 @@ jobs:
 
       - name: Deploy to Linux Apache server
         run: |
-          ssh -o StrictHostKeyChecking=no -v maiyo@brianmaiyo.dev << 'EOF'
+          ssh maiyo@brianmaiyo.dev << 'EOF'
             cd /var/www/Portfolio
             git pull origin main
             npm install
             npm run build
-            sudo systemctl restart apache2
+            pm2 restart porfolio
           EOF
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
