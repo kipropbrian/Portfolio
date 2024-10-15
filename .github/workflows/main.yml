@@ -26,7 +26,7 @@ jobs:
 
       - name: Deploy to Linux Apache server
         run: |
-          ssh maiyo@brianmaiyo.dev << 'EOF'
+          ssh -o StrictHostKeyChecking=no -v maiyo@brianmaiyo.dev << 'EOF'
             cd /var/www/Portfolio
             git pull origin main
             npm install
