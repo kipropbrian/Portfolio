@@ -8,6 +8,7 @@ import github from "@/lib/assets/github.png";
 import voltus from "@/lib/assets/facevector.webp";
 import profilePhoto from "@/lib/assets/profile-photo.jpeg";
 import neovim from "@/lib/assets/nvim.png";
+import monk from "@/lib/assets/monk.png";
 
 import { Mail, MapPin, Phone, Linkedin, PaperclipIcon } from "lucide-react";
 import Image from "next/image";
@@ -159,12 +160,18 @@ export default function Home() {
 
         <div className="space-y-2">
           <div className="flex gap-4">
-            <Link
+          <Link
               href="https://github.com/kipropbrian/zentime-extention"
               target="_blank"
               className="shrink-0"
             >
-             <a href="https://www.flaticon.com/free-icons/monk" title="monk icons">Monk icons created by max.icons - Flaticon</a>
+              <Image
+                src={monk}
+                alt="Zentime icon"
+                width={160}
+                height={160}
+                className="rounded h-full object-cover"
+              />
             </Link>
             <div>
               <Link href="https://github.com/kipropbrian/zentime-extention" target="_blank">
