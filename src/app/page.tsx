@@ -160,6 +160,41 @@ export default function Home() {
         <div className="space-y-2">
           <div className="flex gap-4">
             <Link
+              href="https://github.com/kipropbrian/zentime-extention"
+              target="_blank"
+              className="shrink-0"
+            >
+             <a href="https://www.flaticon.com/free-icons/monk" title="monk icons">Monk icons created by max.icons - Flaticon</a>
+            </Link>
+            <div>
+              <Link href="https://github.com/kipropbrian/zentime-extention" target="_blank">
+                <H3>Zentime</H3>
+              </Link>
+              <P>
+               Zentime is a simple chrome/edge extension that will block websites for one hour.
+               Its a simple tool to improve productivity. {" "}
+                <a
+                  className="text-blue-600"
+                  href="https://github.com/kipropbrian/zentime-extention"
+                >
+                  Zentime
+                </a>{" "}
+              </P>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <Badge variant="secondary">JavaScript</Badge>
+            <Badge variant="secondary">HTML</Badge>
+            <Badge variant="outline">Service Workers</Badge>
+            <Badge variant="outline">Chrome</Badge>
+            <Badge variant="outline">Edge</Badge>
+            <Badge variant="outline">Extensions</Badge>
+          </div>
+        </div>
+
+        <div className="space-y-2">
+          <div className="flex gap-4">
+            <Link
               href="https://voltus.brianmaiyo.dev"
               target="_blank"
               className="shrink-0"
