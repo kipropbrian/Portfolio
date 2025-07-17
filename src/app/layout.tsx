@@ -26,6 +26,11 @@ export default function RootLayout({
           src="https://cloud.umami.is/script.js"
           data-website-id="bb4f9b88-f00b-466a-8df4-bbfbb4312d60"
         ></Script>
+        <Script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "193d452f1e99453faaeda658920ed580"}'
+        ></Script>
         <Background />
         {children}
         <P className="text-center pb-5">
